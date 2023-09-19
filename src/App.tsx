@@ -1,4 +1,4 @@
-import { CalculatorBody } from "./components/features/calculator-body"
+import { CalculatorBody } from "./components/features/components/calculator-body"
 import { Header, Layout } from "./components/ui"
 
 function App() {
