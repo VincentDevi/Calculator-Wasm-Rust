@@ -7,6 +7,11 @@ export const NumberButton = ({
   onClick
 }: Props) => {
   return (
-    <button onClick={onClick}>{label}</button>
+    <button
+      className="w-16 h-16 bg-gray-300 text-blue-800 text-2xl font-semibold rounded-md"
+      onClick={onClick}
+    >
+      {label}
+    </button>
   )
 }

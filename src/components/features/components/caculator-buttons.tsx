@@ -5,9 +5,9 @@ export const CalculatorButtons = () => {
     //
   }
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col gap-4 justify-center items-center">
       <div className="w-full flex gap-4 items-center justify-center">
-        <UtilsButton label="SUPPR" onClick={onClick} />
+        <UtilsButton label="DEL" onClick={onClick} />
         <UtilsButton label="AC" onClick={onClick} />
       </div>
 
