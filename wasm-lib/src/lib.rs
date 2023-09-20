@@ -6,7 +6,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 
 #[wasm_bindgen]
-pub fn calculateResult(current: String) -> i32 {
+pub fn calculateResult(current: String) -> isize {
     2
 }
 

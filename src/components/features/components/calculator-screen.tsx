@@ -14,6 +14,7 @@ export const Screen = ({
     }
     return history
   }
+
   return (
     <div
       className="h-48 w-full border-2 border-gray-600 rounded-md p-2 bg-gray-400 text-white flex flex-col"
