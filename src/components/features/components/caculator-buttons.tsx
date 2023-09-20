@@ -36,8 +36,10 @@ export const CalculatorButtons = () => {
       </div>
 
       <div className="w-full flex gap-4 items-center justify-center">
+        <NumberButton label="" onClick={onClick} />
         <NumberButton label="0" onClick={onClick} />
         <OperationButton label="." onClick={onClick} />
+        <OperationButton label="%" onClick={onClick} />
         <OperationButton label="=" onClick={onClick} />
       </div>
     </div>

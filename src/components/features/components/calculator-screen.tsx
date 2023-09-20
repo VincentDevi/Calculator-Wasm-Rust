@@ -2,9 +2,10 @@ type Props = {
   history: string[],
   currentCalcul: string,
   result: number,
+  error: string | undefined
 }
 export const Screen = ({
-  history, currentCalcul, result
+  history, currentCalcul, result, error
 }: Props) => {
   return (
     <div
@@ -36,7 +37,7 @@ export const Screen = ({
         className="h-1/4 flex justify-end items-center text-2xl"
       >
         <p className="pr-6">
-          {result}
+          {error ?? result}
         </p>
       </div>
     </div>
