@@ -7,6 +7,11 @@ export const OperationButton = ({
   onClick
 }: Props) => {
   return (
-    <button onClick={onClick}>{label}</button>
+    <button
+      className="w-16 h-16 bg-orange-400 text-gray-600 text-2xl font-semibold rounded-md"
+      onClick={onClick}
+    >
+      {label}
+    </button>
   )
 }

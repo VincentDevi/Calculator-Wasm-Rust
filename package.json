@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:wasm": "cd wasm-lib && wasm-pack build --target web --out-dir pkg",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@morphic-ts/adt": "^3.0.0",
+    "fp-ts": "^2.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "wasm-lib": "file:wasm-lib/pkg",
     "zod": "^3.22.2"
   },
   "devDependencies": {

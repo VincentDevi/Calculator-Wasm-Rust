@@ -1,4 +1,4 @@
 import { z } from "zod"
 
-export const UtilsActionsEnumSchema = z.enum(["DELETE", "AC", "CALCULATE"])
-export type UtilsActionsEnum = z.infer<typeof UtilsActionsEnumSchema>
+export const utilsSchema = z.enum(["DEL", "AC"])
+export type Utils = z.infer<typeof utilsSchema>
