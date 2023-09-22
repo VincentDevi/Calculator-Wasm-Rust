@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { CalculatorButtons } from "./caculator-buttons"
 import { Screen } from "./calculator-screen"
-import init, { calculateResult } from "wasm-lib"
+import init, { calculate_result } from "wasm-lib"
 import { Utils, utilsSchema } from "../types"
 
 export const CalculatorBody = () => {
@@ -17,7 +17,7 @@ export const CalculatorBody = () => {
   const calculateResultOnclick = () => {
     if (currentCalcul !== "") {
       init().then(() => {
-        const res = calculateResult(currentCalcul)
+        const res = calculate_result(currentCalcul)
         setResult(res)
         setHistory([...history, `${currentCalcul} = ${res}`])
         setCurrentCalcul("")

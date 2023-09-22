@@ -1,16 +1,14 @@
+use shunting::{MathContext, ShuntingParser};
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub fn add(a: i32, b: i32) -> i32 {
-    a + b
-}
-
-#[wasm_bindgen]
-pub fn calculateResult(current: String) -> isize {
-    2
+pub fn calculate_result(calcul: String) -> f64 {
+    let expr = ShuntingParser::parse_str(&calcul).unwrap();
+    let result = MathContext::new().eval(&expr).unwrap();
+    result
 }
 
 #[test]
-fn add_test() {
-    assert_eq!(1 + 1, add(1, 1));
+fn calculate_result_test() {
+    unimplemented!();
 }

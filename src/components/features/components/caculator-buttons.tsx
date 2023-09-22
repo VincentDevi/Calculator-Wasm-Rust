@@ -28,7 +28,7 @@ export const CalculatorButtons = ({ onClickResult, onClickCurrentCalcul, onClick
         <NumberButton label="4" onClick={() => onClickCurrentCalcul("4")} />
         <NumberButton label="5" onClick={() => onClickCurrentCalcul("5")} />
         <NumberButton label="6" onClick={() => onClickCurrentCalcul("6")} />
-        <OperationButton label="X" onClick={() => onClickCurrentCalcul("X")} />
+        <OperationButton label="X" onClick={() => onClickCurrentCalcul("*")} />
         <OperationButton label="/" onClick={() => onClickCurrentCalcul("/")} />
       </div>
 
